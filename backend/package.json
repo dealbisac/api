@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "a simple api example",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "dealbisac",
+    "backend"
+  ],
+  "author": "Dealbisac",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
