@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "a simple api example",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon && index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +16,7 @@
   "author": "Dealbisac",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
   }
 }

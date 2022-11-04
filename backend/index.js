@@ -1,18 +1,16 @@
 import express from "express";
 
+import mainRoutes from "./routes/main.js";
+
 //Intialize the app with express
 const app = express();
 
+//middleware
+app.use(express.json());
 
-//define the home address of the app
-app.get("/", (req, res) => {
-    res.send("Hello World");
-});
+//routes
+app.use("/api", mainRoutes);
 
-//define new URI for the app
-app.get("/about", (req, res) => {
-    res.send("About Page");
-});
 
 // Define the port where the server should listen
 app.listen(8800, () => {
