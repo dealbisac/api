@@ -6,6 +6,11 @@ const router = express.Router();
 //define the home address of the app
 router.get("/", home);
 
+// define the home address
+router.get("/", (req, res) => {
+    res.send("Hello World");
+});
+
 //define new URI for the app
 router.get("/about", about);
 
