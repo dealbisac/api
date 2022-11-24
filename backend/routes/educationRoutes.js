@@ -9,6 +9,9 @@ router.get("/", showEducations);
 // show individiual education details
 router.get("/:id", showEducation);
 
+// insert education details
+router.post("/", updateEducation);
+
 // edit the education details
 // router.get("/:id", editEducation);
 
