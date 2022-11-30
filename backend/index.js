@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Setup the routes
 app.use("/api", mainRoutes);
-app.use("api/user", userRoutes);
+app.use("/api/user", userRoutes);
 app.use("/api/education", educationRoutes);
 
 

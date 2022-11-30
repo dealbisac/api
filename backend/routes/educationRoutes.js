@@ -1,5 +1,11 @@
 import express from "express";
-import {showEducations, showEducation, updateEducation} from "../controllers/educationController.js";
+import {
+    showEducation, 
+    showEducations, 
+    insertEducation, 
+    updateEducation,
+    deleteEducation
+} from "../controllers/educationController.js";
 
 const router = express.Router();
 
@@ -10,15 +16,12 @@ router.get("/", showEducations);
 router.get("/:id", showEducation);
 
 // insert education details
-router.post("/", updateEducation);
-
-// edit the education details
-// router.get("/:id", editEducation);
+router.post("/", insertEducation);
 
 // update the education details
-router.get("/", updateEducation);
+router.put("/:id", updateEducation);
 
 // delete the education details
-// router.get("/", deleteEducation);
+router.delete("/:id", deleteEducation);
 
 export default router;
